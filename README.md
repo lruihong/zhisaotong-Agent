@@ -326,8 +326,8 @@ cd zhisaotong-Agent
 ```bash
 OPENAI_API_KEY="your_open_api_key"
 DASHSCOPE_API_KEY="your_dashscope_api_key"
-可在 [阿里云百炼平台](https://bailian.console.aliyun.com/) 获取 API Key。
 ```
+可在 [阿里云百炼平台](https://bailian.console.aliyun.com/) 获取 API Key
 
 ---
 
