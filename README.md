@@ -353,11 +353,11 @@ http://127.0.0.1:8000
 ### 4. 启动前端服务
 
 打开第二个 PowerShell 窗口：
+进入项目根目录的`frontend`目录
 
 ```bash
-cd D:\python\pyfiles\zhisaotong-Agent\frontend
-npm install
-npm run dev
+npm.cmd install
+npm.cmd run dev
 ```
 
 前端默认运行地址：
