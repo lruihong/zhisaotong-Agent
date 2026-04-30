@@ -321,10 +321,12 @@ cd zhisaotong-Agent
 
 ### 2. 配置环境
 
-**配置 DashScope API Key（必须）：**
+**配置 API Key（必须）：**
 
 ```bash
+OPENAI_API_KEY="your_open_api_key"
 DASHSCOPE_API_KEY="your_dashscope_api_key"
+可在 [阿里云百炼平台](https://bailian.console.aliyun.com/) 获取 API Key。
 ```
 
 ---
@@ -334,10 +336,10 @@ DASHSCOPE_API_KEY="your_dashscope_api_key"
 打开第一个 PowerShell 窗口：
 
 ```bash
-cd D:\python\pyfiles\zhisaotong-Agent
 python -m venv .venv
 .\.venv\Scripts\activate
-.\.venv\Scripts\python.exe -m uvicorn backend.api:app --reload
+pip install -r requirements.txt
+python -m uvicorn backend.api:app --reload
 ```
 
 后端默认运行地址：
