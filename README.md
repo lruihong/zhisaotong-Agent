@@ -319,81 +319,56 @@ cd zhisaotong-Agent
 
 ---
 
-### 2. 安装后端依赖
+### 2. 配置环境
 
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 3. 安装前端依赖
-
-```bash
-cd frontend
-npm install
-cd ..
-```
-
----
-
-### 4. 配置 API Key
-
-根据实际情况配置 DashScope API Key：
+**配置 DashScope API Key（必须）：**
 
 ```bash
 DASHSCOPE_API_KEY="your_dashscope_api_key"
 ```
 
-并检查以下配置文件：
-
-```text
-config/agent.yml
-config/rag.yml
-config/chroma.yml
-config/prompts.yml
-```
-
 ---
 
-### 5. 启动后端服务
+### 3. 启动后端服务
 
-在项目根目录下执行：
+打开第一个 PowerShell 窗口：
 
 ```bash
-uvicorn backend.api:app --reload
+cd D:\python\pyfiles\zhisaotong-Agent
+python -m venv .venv
+.\.venv\Scripts\activate
+.\.venv\Scripts\python.exe -m uvicorn backend.api:app --reload
 ```
 
-后端默认运行地址通常为：
+后端默认运行地址：
 
 ```text
 http://127.0.0.1:8000
 ```
 
-可访问以下接口测试后端是否启动成功：
-
-```text
-http://127.0.0.1:8000/api/health
-```
-
 ---
 
-### 6. 启动前端服务
+### 4. 启动前端服务
 
-新开一个终端，进入前端目录：
+打开第二个 PowerShell 窗口：
 
 ```bash
-cd frontend
+cd D:\python\pyfiles\zhisaotong-Agent\frontend
+npm install
 npm run dev
 ```
 
-前端默认运行地址通常为：
+前端默认运行地址：
 
 ```text
 http://localhost:5173
 ```
 
-在浏览器中打开该地址，即可进入智扫通机器人智能客服页面。
+---
+
+### 5. 访问应用
+
+在浏览器中打开 `http://localhost:5173`，即可进入智扫通机器人智能客服页面。
 
 ---
 
